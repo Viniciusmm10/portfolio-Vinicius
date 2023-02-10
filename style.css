@@ -13,7 +13,7 @@
   /* ===== Cores ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #695cfe;
+  --primary-color: rgb(238, 130, 238);
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
@@ -54,6 +54,22 @@ body {
   background: var(--sidebar-color);
 }
 
+.sidebar li {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li .icon {
+  min-width: 60px;
+  font-size: 20px;
+}
+.sidebar li .icon .sidebar li .text {
+  color: var(--text-color);
+}
+
 .sidebar header {
   position: relative;
 }
@@ -89,4 +105,17 @@ header .image-text .header-text {
   height: 25px;
   width: 25px;
   background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+}
+
+.sidebar li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
