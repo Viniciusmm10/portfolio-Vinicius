@@ -20,7 +20,7 @@
 
   /* ===== Transition ==== */
 
-  --tran-03: all 0.2s ease;
+  --tran-02: all 0.2s ease;
   --tran-03: all 0.3s ease;
   --tran-04: all 0.4s ease;
   --tran-05: all 0.5s ease;
@@ -29,18 +29,6 @@
 body {
   height: 100vh;
   background: var(--body-color);
-}
-/* ====== CSS reutilizavel ====== */
-.sidebar .text {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text-color);
-}
-
-.sidebar .image {
-  min-width: 40px;
-  display: flex;
-  align-items: center;
 }
 
 /* ===== Sidebar ====== */
@@ -54,6 +42,20 @@ body {
   background: var(--sidebar-color);
 }
 
+/* ======== CSS Reutilizável ======= */
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.sidebar .image {
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .sidebar li {
   height: 50px;
   margin-top: 10px;
@@ -63,11 +65,16 @@ body {
 }
 
 .sidebar li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 60px;
   font-size: 20px;
 }
-.sidebar li .icon .sidebar li .text {
+.sidebar li .icon, 
+.sidebar li .text {
   color: var(--text-color);
+  transition: var(--tran-02);
 }
 
 .sidebar header {
@@ -113,9 +120,35 @@ header .image-text .header-text {
   font-size: 22px;
 }
 
+.sidebar .search-box{
+  background: var(--primary-color-light);
+}
+
+.search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color-light);
+}
+
 .sidebar li a {
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   text-decoration: none;
+  border-radius: 6px;
+  transition: var(--tran-04);
 }
+
+.sidebar li a:hover {
+  background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
