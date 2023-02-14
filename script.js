@@ -3,6 +3,8 @@ const body = document.querySelector('body'),
   toggle = body.querySelector('.toggle'),
   searchBtn = body.querySelector('.search-box')
 
-toggle.addEventListener('click', () => {
+
+
+toggle.addEventListener('mouseover', () => {
   sidebar.classList.toggle('close')
 })

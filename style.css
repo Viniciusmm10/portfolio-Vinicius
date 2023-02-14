@@ -31,6 +31,29 @@ body {
   background: var(--body-color);
 }
 
+/* ==== portifólio style */
+
+.sidebar .portfolio {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  font-size: large;
+  padding-top: 100px;
+}
+
+.sidebar #linkedin {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  min-width: 60px;
+  font-size: 20px;
+}
+
+.sidebar #linkedin:hover {
+  background: var(--body-color);
+}
+
 /* ===== Sidebar ====== */
 .sidebar {
   position: fixed;
@@ -93,7 +116,7 @@ body {
 }
 
 .sidebar img {
-  height: 95px;
+  height: 70px;
   border-radius: 6px;
 }
 
@@ -129,6 +152,14 @@ header .image-text .header-text {
   border-radius: 50%;
   color: var(--sidebar-color);
   font-size: 22px;
+}
+
+.sidebar.close .toggle {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar header .toggle {
+  transform: rotate(180deg);
 }
 
 .sidebar .search-box {
@@ -168,19 +199,9 @@ header .image-text .header-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
-/* ==== portifólio style */
-
-.portfolio {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  text-decoration: none;
-  font-size: large;
-}
-
-.textport {
-  padding-top: 40px;
+.backgroundweb {
+  background-color: #707070;
 }
