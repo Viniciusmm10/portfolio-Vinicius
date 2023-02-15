@@ -66,6 +66,7 @@ body {
   transition: var(--tran-02);
   white-space: nowrap;
   opacity: 1;
+  z-index: 100;
 }
 
 .sidebar.close {
@@ -202,6 +203,37 @@ header .image-text .header-text {
   padding-top: 60px;
 }
 
-.backgroundweb {
-  background-color: #707070;
+.home {
+  position: relative;
+  left: 150px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  background: var(--body-color);
+  transition: var(--tran-03);
+  text-align: center;
+  
+}
+
+.home .principal {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.sidebar.close ~ .home {
+  left: 70px;
+  width: calc(100% - 88px);
+}
+
+.home .arquivobtn {
+  height: 50px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #eedae5;
+
+}
+
+.home .textbtn {
+  font-size: medium;
 }
