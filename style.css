@@ -13,7 +13,7 @@
   /* ===== Cores ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: rgb(238, 130, 238);
+  --primary-color: #DC3D4B;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
@@ -55,6 +55,7 @@ body {
 }
 
 /* ===== Sidebar ====== */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -203,6 +204,16 @@ header .image-text .header-text {
   padding-top: 60px;
 }
 
+/* ====== Conteúdo do site ====== */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .home {
   position: relative;
   left: 150px;
@@ -211,14 +222,6 @@ header .image-text .header-text {
   background: var(--body-color);
   transition: var(--tran-03);
   text-align: center;
-  
-}
-
-.home .principal {
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 8px 40px;
 }
 
 .sidebar.close ~ .home {
@@ -226,14 +229,36 @@ header .image-text .header-text {
   width: calc(100% - 88px);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text-color);
+}
+
+/* =====  Botão principal ===== */
+
+.home .principal .arquivobtn {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 8px 40px;
+}
+
 .home .arquivobtn {
   height: 50px;
   width: 300px;
   border-radius: 8px;
   background-color: #eedae5;
-
 }
 
 .home .textbtn {
   font-size: medium;
 }
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* ==== Texto acima do botão ==== */
