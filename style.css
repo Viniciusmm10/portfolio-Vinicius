@@ -248,16 +248,14 @@ footer {
   min-height: 250px;
   background: var(--sidebar-color);
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 footer .box {
   width: 280px;
-  min-height: 150px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
+  min-height: 300px;
+  padding: 30px;
+  padding-left: 150px;
 }
 
 footer .box:nth-child(4) {
@@ -287,3 +285,4 @@ footer .box:nth-child(4) {
   color: var(--text-color);
   text-align: justify;
 }
+
