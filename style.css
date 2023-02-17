@@ -13,7 +13,7 @@
   /* ===== Cores ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #DC3D4B;
+  --primary-color: #dc3d4b;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
@@ -29,6 +29,8 @@
 body {
   height: 100vh;
   background: var(--body-color);
+  padding: 0;
+  margin: 0;
 }
 
 /* ==== portifólio style */
@@ -90,6 +92,7 @@ body {
   min-width: 40px;
   display: flex;
   align-items: left;
+  padding-right: 5px;
 }
 
 .sidebar li {
@@ -222,6 +225,8 @@ header .image-text .header-text {
   background: var(--body-color);
   transition: var(--tran-03);
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar.close ~ .home {
@@ -236,29 +241,49 @@ header .image-text .header-text {
   color: var(--text-color);
 }
 
-/* =====  Botão principal ===== */
+/* =====  Rodapé ===== */
 
-.home .principal .arquivobtn {
-  font-size: 30px;
-  font-weight: 500;
-  color: var(--text-color);
-  padding: 8px 40px;
-}
-
-.home .arquivobtn {
-  height: 50px;
-  width: 300px;
-  border-radius: 8px;
-  background-color: #eedae5;
-}
-
-.home .textbtn {
-  font-size: medium;
-}
-
-.rodape {
+footer {
+  width: 100%;
+  min-height: 250px;
+  background: var(--sidebar-color);
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
 }
-/* ==== Texto acima do botão ==== */
+
+footer .box {
+  width: 280px;
+  min-height: 150px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .box:nth-child(4) {
+  width: 400px;
+}
+
+.box h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.box ul li {
+  margin: 10px 0px;
+  list-style: none;
+}
+
+.box ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.box ul li a:hover {
+  color: var(--primary-color);
+}
+
+.box p {
+  color: var(--text-color);
+  text-align: justify;
+}
