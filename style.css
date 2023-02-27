@@ -12,11 +12,11 @@
 :root {
   /* ===== Cores ===== */
   --body-color: #e4e9f7;
-  --background-color: #fff;
-  --primary-color: #30323d;
+  --background-color: #30323d;
+  --primary-color: #1d1e1b;
   --primary-color-light: #f6f5ff;
   --secondary-color: #3a4a64;
-  --hover-color: #585c72;
+  --hover-color: #ffd54e;
   --text-color: #72a0d6;
 
   /* ===== Transition ==== */
@@ -32,9 +32,21 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
 body {
   margin: 0px;
   padding: 0px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  color: var(--text-color);
 }
 
 ::selection {
@@ -42,64 +54,61 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
-  height: 70px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3.2rem 9%;
+  background: var(--primary-color);
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
+  z-index: 100;
 }
 
-ul .logo {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-li {
-  margin: 0 10px;
-}
-
-.menu a {
+.logo {
+  font-size: 2.5rem;
   color: var(--text-color);
+  font-weight: 800;
+  cursor: default;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  height: 100%;
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-left: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--tran-04);
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+  color: var(--hover-color);
+}
+
+#menu-icon {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/* ===== INICIO ===== */
+
+.home {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 20px;
 }
 
-a:hover {
-  background-color: var(--hover-color);
-  transition: var(--tran-05);
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
-.responsivo {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 50px;
-  text-align: center;
-}
-
-.responsivo h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.responsivo p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.responsivo img {
-  max-width: 100%;
-  height: auto;
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
