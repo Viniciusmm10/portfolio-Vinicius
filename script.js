@@ -1,6 +1,20 @@
-const menuIcon = document.querySelector('.menu-icon')
-const nav = document.querySelector('nav')
+let sections = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header nav a')
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('menu-open')
-})
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY
+    let offset = sec.offsetTop - 50
+    let height = sec.offsetHeight
+    let id = sec.getAttribute('id')
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach(links => {
+        links.classList.remove('ativo')
+        document
+          .querySelector(`header nav a[href*='${id}']`)
+          .classList.add('ativo')
+      })
+    }
+  })
+}
