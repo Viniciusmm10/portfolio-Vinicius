@@ -22,6 +22,7 @@
   --secondary-color: #494e5b;
   --hover-color: #ffd54e;
   --text-color: #fff;
+  --link-color: #72a0d6;
 
   /* ===== Transition ==== */
 
@@ -64,7 +65,7 @@ header {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: default;
@@ -202,6 +203,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .knowledge-container .knowledge-box {
@@ -222,6 +224,10 @@ span {
   font-size: 2.2rem;
 }
 
+.knowledge-box:hover {
+  box-shadow: 0 0 1rem var(--hover-color);
+}
+
 .knowledge-container .knowledge-box2 {
   flex: 1 1 30rem;
   background: var(--secondary-color);
@@ -238,6 +244,10 @@ span {
 
 .knowledge-box2 h3 {
   font-size: 2.2rem;
+}
+
+.knowledge-box2:hover {
+  box-shadow: 0 0 1rem var(--hover-color);
 }
 
 .knowledge-container .knowledge-box2 {
@@ -259,5 +269,112 @@ span {
 }
 
 .projetos {
+  margin-bottom: 5rem;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.projetos-container .projetos-box {
+  flex: 1 1 30rem;
   background: var(--secondary-color);
+  padding: 3rem 2rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2rem solid var(--background-color);
+}
+
+.projetos-box i {
+  font-size: 4rem;
+  color: var(--link-color);
+  padding: 2rem;
+}
+
+.projetos-box h3 {
+  font-size: 1.7rem;
+}
+
+.projetos-box:hover {
+  box-shadow: 0 0 1rem var(--hover-color);
+}
+
+.sobre-mim {
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.sobre-mim p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.contato-container .contato-box {
+  flex: 1 1 30rem;
+  background: var(--secondary-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2rem solid var(--background-color);
+}
+
+.contato-box h3 {
+  font-size: 2rem;
+}
+
+.contato-box i {
+  font-size: 7rem;
+  color: var(--hover-color);
+  padding: 2rem;
+}
+
+.contato-box p {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.contato-box:hover {
+  box-shadow: 0 0 1rem var(--hover-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--secondary-color);
+}
+
+.footer-text p {
+  font-size: 1.2rem;
+  color: var(--hover-color);
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--background-color);
+  border-radius: 0.8rem;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--hover-color);
 }
