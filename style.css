@@ -64,6 +64,10 @@ header {
   z-index: 100;
 }
 
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
 .logo {
   font-size: 2rem;
   color: var(--text-color);
@@ -166,10 +170,10 @@ span {
   background: var(--hover-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--hover-color);
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #fff;
-  letter-spacing: 0.6rem;
-  font-weight: 900;
+  letter-spacing: 0.8rem;
+  font-weight: 700;
   transition: var(--tran-05) ease;
 }
 
