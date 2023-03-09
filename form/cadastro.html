@@ -65,12 +65,16 @@
       messagingSenderId: '1081295305394',
       appId: '1:1081295305394:web:4108cdba2be6f37427e7ab'
     }
-    firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig)
 
-    firebase.auth().signInWithEmailAndPassword("any@email.com", "123456").then(response => {
-        console.log("sucess", response)
-    }).catch(error => {
-      console.log("error", error)
-    })
+    firebase
+      .auth()
+      .signInWithEmailAndPassword('any@email.com', '123456')
+      .then(response => {
+        console.log('sucess', response)
+      })
+      .catch(error => {
+        console.log('error', error)
+      })
   </script>
 </html>
