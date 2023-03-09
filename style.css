@@ -90,7 +90,7 @@ header {
 }
 
 #menu-icon {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: var(--hover-color);
   display: none;
 }
@@ -381,4 +381,90 @@ span {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--hover-color);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--background-color);
+    border-top: 0.1rem solid var(--background-color);
+    box-shadow: 0 0.5rem 1rem var(--hover-color);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .sobre-mim {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 451px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 451px) {
+  html {
+    font-size: 40%;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
