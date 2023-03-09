@@ -99,6 +99,14 @@ h2 {
   line-height: 57px;
 }
 
+.input-box .toggle-icon {
+  position: absolute;
+  right: 8px;
+  color: var(--text-color);
+  line-height: 20px;
+  cursor: pointer;
+}
+
 .lembrar-me {
   margin: -15px 0 15px;
   font-size: 0.9em;

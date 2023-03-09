@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="login.css" />
 
-    <title>Form Login</title>
+    <title>Login</title>
   </head>
   <body>
     <div class="wrapper">
@@ -20,13 +20,18 @@
         <h2>LOGIN</h2>
         <div class="input-box">
           <span class="icon"> <i class="bx bxs-envelope"></i></span>
-          <input type="email" required />
+          <input
+            type="email"
+            placeholder="Email
+          "
+            required
+          />
           <label>Email</label>
         </div>
         <div class="input-box">
-          <span class="icon"> <i class="bx bxs-lock-alt"></i></span>
-          <input type="password" required />
+          <input class="senha" type="password" required />
           <label>Senha</label>
+          <img src="assets/eye-off.svg" alt="" class="toggle-icon" />
         </div>
         <div class="lembrar-me">
           <label><input type="checkbox" />Lembrar-me</label>
@@ -40,6 +45,6 @@
     </div>
   </body>
 
-  <script src="form
+  <script src="form.js
   "></script>
 </html>

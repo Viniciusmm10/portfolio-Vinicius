@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="cadastro.css" />
 
-    <title>Form Cadastro</title>
+    <title>Cadastro</title>
   </head>
   <body>
     <div class="wrapper">
@@ -20,7 +20,7 @@
         <h2>Criar conta</h2>
 
         <div class="input-box">
-          <span class="icon"> <i class='bx bx-user'></i></i></span>
+          <span class="icon"> <i class="bx bx-user"></i></span>
           <input type="name" required />
           <label>Nome</label>
         </div>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="input-box">
-          <input class="senha"  type="password" required />
+          <input class="senha" type="password" required />
           <label>Senha</label>
           <img src="assets/eye-off.svg" alt="" class="toggle-icon" />
         </div>
@@ -54,4 +54,23 @@
   </body>
 
   <script src="form.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: 'AIzaSyAqXtqyI0gpdCcosdPIzusG6mw2b1_zzeg',
+      authDomain: 'portfoliovinicius-bf881.firebaseapp.com',
+      projectId: 'portfoliovinicius-bf881',
+      storageBucket: 'portfoliovinicius-bf881.appspot.com',
+      messagingSenderId: '1081295305394',
+      appId: '1:1081295305394:web:4108cdba2be6f37427e7ab'
+    }
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.auth().signInWithEmailAndPassword("any@email.com", "123456").then(response => {
+        console.log("sucess", response)
+    }).catch(error => {
+      console.log("error", error)
+    })
+  </script>
 </html>
