@@ -448,16 +448,25 @@ span {
   }
 }
 
-@media (max-width: 451px) {
-  html {
-    font-size: 50%;
-  }
-}
 
 @media (max-width: 451px) {
+  .home-content h3 {
+    font-size: 4rem;
+  }
+
+  .home-content h1 {
+    font-size: 10rem;
+  }
+
+  .home-content a {
+    font-size: 3rem;
+  }
+  
   html {
     font-size: 40%;
   }
+
+  
 
   .footer {
     flex-direction: column-reverse;

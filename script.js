@@ -1,3 +1,15 @@
+let sections = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header .navbar a')
+
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    if (navbar.classList.contains('active')) {
+      navbar.style.display = 'none'
+      navbar.classList.remove('active')
+      menuIcon.classList.toggle('bx-x')
+    }
+  })
+})
 
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
@@ -5,10 +17,12 @@ let navbar = document.querySelector('.navbar')
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x')
   navbar.classList.toggle('active')
+  if (navbar.classList.contains('active')) {
+    navbar.style.display = 'block'
+  } else {
+    navbar.style.display = 'none'
+  }
 }
-
-let sections = document.querySelectorAll('section')
-let navLinks = document.querySelectorAll('header nav a')
 
 window.onscroll = () => {
   sections.forEach(sec => {
