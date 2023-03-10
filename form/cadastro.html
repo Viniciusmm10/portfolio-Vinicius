@@ -17,7 +17,7 @@
   <body>
     <div class="wrapper">
       <form action="">
-        <h2>Criar conta</h2>
+        <h2>CRIAR CONTA</h2>
 
         <div class="input-box">
           <span class="icon"> <i class="bx bx-user"></i></span>
@@ -27,7 +27,12 @@
 
         <div class="input-box">
           <span class="icon"> <i class="bx bxs-envelope"></i></span>
-          <input type="email" required />
+          <input
+            type="name"
+            id="email"
+            onchange="validateFields(email)"
+            required
+          />
           <label>Email</label>
         </div>
 
@@ -41,12 +46,8 @@
           <label>Confirmar Senha</label>
           <img src="assets/eye-off.svg" alt="" class="toggle-icon" />
         </div>
-        <div class="lembrar-me">
-          <label><input type="checkbox" />Lembrar-me</label>
-          <a href="#">Esqueci minha senha</a>
-        </div>
-        <button type="submit">Criar conta</button>
-        <div class="registrar-link">
+        <button type="submit" id="recover-password-button">CRIAR CONTA</button>
+        <div class="login-link">
           <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
         </div>
       </form>
@@ -66,7 +67,7 @@
       appId: '1:1081295305394:web:4108cdba2be6f37427e7ab'
     }
     firebase.initializeApp(firebaseConfig)
-
+    console.log('antes')
     firebase
       .auth()
       .signInWithEmailAndPassword('any@email.com', '123456')
@@ -76,5 +77,6 @@
       .catch(error => {
         console.log('error', error)
       })
+    console.log('depois')
   </script>
 </html>

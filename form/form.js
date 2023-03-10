@@ -1,3 +1,20 @@
+function validateFields() {
+  const email = document.getElementById('email').value
+  if (!email) {
+    document.getElementById('recover-password-button').disabled = true
+  } else if (validateEmail(email)) {
+    document.getElementById('recover-password-button').disabled = false
+  } else {
+    document.getElementById('recover-password-button').disabled = true
+  }
+}
+
+function validateEmail(email) {
+  return /\S+@\S+\.\S+/.test(email)
+}
+
+
+
 let containers = document.querySelectorAll('.input-box')
 let inputs = document.querySelectorAll('.senha')
 let icons = document.querySelectorAll('.toggle-icon')

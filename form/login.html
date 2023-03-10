@@ -20,12 +20,7 @@
         <h2>LOGIN</h2>
         <div class="input-box">
           <span class="icon"> <i class="bx bxs-envelope"></i></span>
-          <input
-            type="email"
-            placeholder="Email
-          "
-            required
-          />
+          <input type="name" id="email" onchange="validateFields()" required />
           <label>Email</label>
         </div>
         <div class="input-box">
@@ -35,9 +30,17 @@
         </div>
         <div class="lembrar-me">
           <label><input type="checkbox" />Lembrar-me</label>
-          <a href="#">Esqueci minha senha</a>
+
+          <button
+            class="remember"
+            type="button"
+            disabled="true"
+            id="recover-password-button"
+          >
+            Esqueci minha senha
+          </button>
         </div>
-        <button type="submit">LOGIN</button>
+        <button class="login" type="submit" disabled="true">LOGIN</button>
         <div class="registrar-link">
           <p>Não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
         </div>
