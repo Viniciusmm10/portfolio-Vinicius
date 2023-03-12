@@ -146,18 +146,18 @@ button:hover {
   text-decoration: underline;
 }
 
-.inicio-link {
+.link-inicio {
   font-size: 0.8rem;
   text-align: center;
   margin: 3rem 0 10px;
 }
 
-.inicio-link p a {
+.link-inicio p a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
 }
 
-.inicio-link a:hover {
+.link-inicio a:hover {
   text-decoration: underline;
 }
