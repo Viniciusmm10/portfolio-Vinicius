@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   min-height: 100vh;
   background: var(--background-color);
 }
@@ -39,7 +40,7 @@ body {
 .wrapper {
   position: relative;
   width: 400px;
-  height: 520px;
+  height: 550px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   border: 1px solid var(--secondary-color);
@@ -55,12 +56,13 @@ h2 {
   text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 900;
+  margin: 3rem 0 3px;
 }
 
 .input-box {
   position: relative;
   width: 320px;
-  margin: 40px 0;
+  margin: 30px 0;
   border-bottom: 2px solid var(--text-color);
 }
 
@@ -184,5 +186,21 @@ button:active {
 }
 
 .registrar-link a:hover {
+  text-decoration: underline;
+}
+
+.inicio-link {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 3rem 0 10px;
+}
+
+.inicio-link p a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inicio-link a:hover {
   text-decoration: underline;
 }
