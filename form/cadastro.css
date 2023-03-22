@@ -107,7 +107,7 @@ h2 {
   cursor: pointer;
 }
 
-button {
+.signup {
   width: 100%;
   height: 45px;
   background: var(--secondary-color);
@@ -123,7 +123,7 @@ button {
   margin: 1rem 0 10px;
 }
 
-button:hover {
+.signup:hover {
   background-color: var(--hover-color);
   box-shadow: 0 0 2rem var(--hover-color);
   font-weight: 900;
@@ -146,18 +146,20 @@ button:hover {
   text-decoration: underline;
 }
 
-.link-inicio {
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 3rem 0 10px;
-}
-
-.link-inicio p a {
+.back {
+  width: 30%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
   color: var(--text-color);
-  text-decoration: none;
-  font-weight: 600;
+  padding-top: 1.2rem;
 }
 
-.link-inicio a:hover {
-  text-decoration: underline;
+.back:hover {
+  color: var(--hover-color);
 }

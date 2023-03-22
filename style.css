@@ -137,19 +137,6 @@ span {
   font-weight: 200;
 }
 
-.arrowdown i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  background: transparent;
-  font-size: 9rem;
-  padding-top: 2rem;
-  margin: 5rem;
-  color: var(--hover-color);
-}
-
 .social-media a {
   display: inline-flex;
   justify-content: center;
