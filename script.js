@@ -1,14 +1,27 @@
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header .navbar a')
+const menuLinks = document.querySelectorAll('.navbar a[href^="#"]')
 
-navLinks.forEach(function (link) {
-  link.addEventListener('click', function () {
-    if (navbar.classList.contains('active')) {
-      navbar.style.display = 'none'
-      navbar.classList.remove('active')
-      menuIcon.classList.toggle('bx-x')
-    }
+function getdistanceFromTheTop(element) {
+  const id = element.getAttribute('href')
+  return document.querySelector(id).offsetTop
+}
+
+function nativeScroll(distanceFromTheTop) {
+  window.scroll({
+    top: distanceFromTheTop,
+    behavior: 'smooth'
   })
+}
+
+function scrollToSection(event) {
+  event.preventDefault()
+  const distanceFromTheTop = getdistanceFromTheTop(event.target) - 60
+  nativeScroll(distanceFromTheTop)
+}
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection)
 })
 
 let menuIcon = document.querySelector('#menu-icon')

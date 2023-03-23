@@ -35,10 +35,12 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  
 }
 
 body {
   background: var(--background-color);
+  
 }
 
 section {
@@ -380,6 +382,18 @@ span {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--hover-color);
+}
+
+@media (max-width: 2160px) {
+  html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+  }
+
+  .home {
+    padding-top: 30rem;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1200px) {
