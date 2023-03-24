@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  height: 500px;
+}
+
+/*========== Seta para imagem não aparecer ==========*/
+.mySlides {
+  display: none;
+}
+
+/*========= Botões Avança e Volta ============*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*=========== Botão da Direita ============*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover dos botões */
+.prev:hover,
+.next:hover {
+  background-color: #ffd54e;
+}
+
+/* Descrição da imagem */
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Animação */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

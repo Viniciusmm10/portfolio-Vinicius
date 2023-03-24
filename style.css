@@ -85,7 +85,7 @@ header {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.ativo {
   color: var(--hover-color);
 }
 
@@ -433,7 +433,7 @@ span {
     display: none;
   }
 
-  .navbar.active {
+  .navbar.ativo {
     display: block;
   }
 
