@@ -103,7 +103,7 @@ header {
   align-items: flex-start;
   text-align: center;
   padding-top: 10rem;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1260px;
 }
@@ -204,7 +204,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1260px;
 }
@@ -281,7 +281,7 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1260px;
 }
@@ -315,7 +315,7 @@ span {
 }
 
 .sobre-mim {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1260px;
 }
@@ -331,7 +331,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1260px;
 }
@@ -343,7 +343,6 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: 2rem solid var(--background-color);
-
 }
 
 .contato-box h3 {
