@@ -310,8 +310,9 @@ span {
 }
 
 .sobre-mim {
-  margin: 1rem;
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .sobre-mim p {
