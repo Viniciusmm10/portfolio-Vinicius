@@ -35,12 +35,10 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  
 }
 
 body {
   background: var(--background-color);
-  
 }
 
 section {
@@ -105,6 +103,9 @@ header {
   align-items: flex-start;
   text-align: center;
   padding-top: 10rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .home-content h3 {
@@ -203,7 +204,9 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .conhecimentos-container .conhecimentos-box {
@@ -213,6 +216,7 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: 2rem solid var(--background-color);
+  margin: 4px auto;
 }
 
 .conhecimentos-box i {
@@ -277,13 +281,14 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .projetos-container img {
-  width: 100%;
-  height: 55rem;
+  width: 80%;
+  height: 80%;
 }
 
 .projetos-container .projetos-box {
@@ -310,8 +315,9 @@ span {
 }
 
 .sobre-mim {
-  margin: 1rem;
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .sobre-mim p {
@@ -325,16 +331,19 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .contato-container .contato-box {
   flex: 1 1 30rem;
   background: var(--secondary-color);
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 2rem 8rem;
   border-radius: 2rem;
   text-align: center;
   border: 2rem solid var(--background-color);
+
 }
 
 .contato-box h3 {
@@ -383,7 +392,6 @@ span {
   font-size: 2.4rem;
   color: var(--hover-color);
 }
-
 
 @media (max-width: 1200px) {
   html {
