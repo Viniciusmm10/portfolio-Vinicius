@@ -53,34 +53,14 @@
           <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
         </div>
 
-        <button onclick="goBack()" type="button" class="back">Voltar</button>
+        <a href="https://vinimiguel.com.br"
+          ><button onclick="goBack()" type="button" class="back">
+            Voltar
+          </button></a
+        >
       </form>
     </div>
   </body>
 
   <script src="form.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: 'AIzaSyAqXtqyI0gpdCcosdPIzusG6mw2b1_zzeg',
-      authDomain: 'portfoliovinicius-bf881.firebaseapp.com',
-      projectId: 'portfoliovinicius-bf881',
-      storageBucket: 'portfoliovinicius-bf881.appspot.com',
-      messagingSenderId: '1081295305394',
-      appId: '1:1081295305394:web:4108cdba2be6f37427e7ab'
-    }
-    firebase.initializeApp(firebaseConfig)
-    console.log('antes')
-    firebase
-      .auth()
-      .signInWithEmailAndPassword('any@email.com', '123456')
-      .then(response => {
-        console.log('sucess', response)
-      })
-      .catch(error => {
-        console.log('error', error)
-      })
-    console.log('depois')
-  </script>
 </html>
