@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="cadastro.css" />
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="">
+        <h2>CRIAR CONTA</h2>
+
+        <div class="input-box">
+          <span class="icon"> <i class="bx bx-user"></i></span>
+          <input type="name" required />
+          <label>Nome</label>
+          <div class="error" id="email-invalid-error">Email é invalido</div>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"> <i class="bx bxs-envelope"></i></span>
+          <input
+            type="name"
+            id="email"
+            onchange="validateFields(email)"
+            required
+          />
+          <label>Email</label>
+          <div class="error" id="email-invalid-error">Email é invalido</div>
+        </div>
+
+        <div class="input-box">
+          <input class="senha" type="password" required />
+          <label>Senha</label>
+          <img src="assets/eye-off.svg" alt="" class="toggle-icon" />
+          <div class="error" id="password-invalid-error">Email é invalido</div>
+        </div>
+        <div class="input-box">
+          <input class="senha" type="password" required />
+          <label>Confirmar Senha</label>
+          <img src="assets/eye-off.svg" alt="" class="toggle-icon" />
+          <div class="error" id="password-invalid-error">Email é invalido</div>
+        </div>
+        <button class="signup" type="submit" id="recover-password-button">CRIAR CONTA</button>
+        <div class="login-link">
+          <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        </div>
+
+        <button onclick="goBack()" type="button" class="back">Voltar</button>
+      </form>
+    </div>
+  </body>
+
+  <script src="form.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: 'AIzaSyAqXtqyI0gpdCcosdPIzusG6mw2b1_zzeg',
+      authDomain: 'portfoliovinicius-bf881.firebaseapp.com',
+      projectId: 'portfoliovinicius-bf881',
+      storageBucket: 'portfoliovinicius-bf881.appspot.com',
+      messagingSenderId: '1081295305394',
+      appId: '1:1081295305394:web:4108cdba2be6f37427e7ab'
+    }
+    firebase.initializeApp(firebaseConfig)
+    console.log('antes')
+    firebase
+      .auth()
+      .signInWithEmailAndPassword('any@email.com', '123456')
+      .then(response => {
+        console.log('sucess', response)
+      })
+      .catch(error => {
+        console.log('error', error)
+      })
+    console.log('depois')
+  </script>
+</html>

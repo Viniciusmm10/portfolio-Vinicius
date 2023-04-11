@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="">
+        <h2>LOGIN</h2>
+        <div class="input-box">
+          
+          <span class="icon"> <i class="bx bxs-envelope"></i></span>
+          <input type="name" id="email" onchange="onChangeEmail()" required />
+          <label>Email</label>
+          <div class="error" id="email-invalid-error">Email é invalido</div>
+        </div>
+        <div class="input-box">
+          <input class="senha" id="password" type="password" onchange="onChangePassword()" required />
+          <label>Senha</label>
+          
+          <img src="assets/eye-off.svg" alt="" class="toggle-icon"/>
+          <div class="error" id="password-required-error">Senha é obrigatória</div>
+          
+         
+        </div>
+        <div class="lembrar-me">
+          <label><input type="checkbox" />Lembrar-me</label>
+
+          <button
+            class="remember"
+            type="button"
+            disabled="true"
+            id="recover-password-button"
+          >
+            Esqueci minha senha
+          </button>
+        </div>
+        <button class="login" id="login-button" type="button" disabled="true" onclick="login()">LOGIN</button>
+        <div class="registrar-link">
+          <p>Não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
+        </div>
+          <button onclick="goBack()" type="button" class="back">Voltar
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  
+
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js" type="module"></script>
+
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyBU94cwjjlBcZYq9lqsgto7o-pn58UtPJc",
+    authDomain: "projetoauth-d30d7.firebaseapp.com",
+    projectId: "projetoauth-d30d7",
+    storageBucket: "projetoauth-d30d7.appspot.com",
+    messagingSenderId: "995589248189",
+    appId: "1:995589248189:web:7bad8cea70c912bc6993d4"
+  };
+  const firebase.initializeApp(firebaseConfig)
+
+  console.log('antes')
+    firebase.auth().signInWithEmailAndPassword(email, password).then(response => {
+      console.log('sucess', response)
+  }).catch(error => {
+      console.log('error', error)
+  })
+  console.log('depois')
+  </script>
+
+</html>
